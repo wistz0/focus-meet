@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Meet Focus \u2014 Local Session Tracker",
+  "version": "0.1.0",
+  "description": "An opt-in, local-only activity summary for Google Meet tabs.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs",
+    "idle",
+    "alarms"
+  ],
+  "host_permissions": [
+    "https://meet.google.com/*"
+  ],
+  "action": {
+    "default_title": "Meet Focus",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://meet.google.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

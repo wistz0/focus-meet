@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meet Focus</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <h1>Meet Focus</h1>
+    <p id="tab-state" class="muted">Checking current tab…</p>
+    <p id="tracking-state" aria-live="polite">Tracking is off.</p>
+    <button id="toggle" type="button">Start local tracking</button>
+    <section class="stats" aria-label="Current session summary">
+      <div><span class="label">Active time</span><strong id="active-time">0 min</strong></div>
+      <div><span class="label">Idle time</span><strong id="idle-time">0 min</strong></div>
+      <div><span class="label">Cursor events</span><strong id="cursor-count">0</strong></div>
+    </section>
+    <p class="notice">Opt-in and local-only. This prototype does not record video, audio, screen contents, or pupil/gaze data. It is not a measure of attention or learning.</p>
+    <button id="reset" class="secondary" type="button">Reset session totals</button>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
