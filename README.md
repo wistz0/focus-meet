@@ -50,3 +50,5 @@ This prototype is designed for voluntary, visible use. Before any classroom roll
 - The current popup displays aggregate totals for the current browser profile; it does not implement per-class sessions, export, remote dashboards, authentication, or instructor reporting.
 - Chrome service workers can be suspended, so time totals are approximate and should be tested across sleep/wake and browser restart scenarios.
 - This is a prototype, not a validated proctoring or learning-analytics product.
+
+SIA ACTIVITY | Jan Christopher S. Villanueva | BSIT 3-1
